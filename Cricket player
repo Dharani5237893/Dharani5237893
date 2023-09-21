@@ -1,0 +1,39 @@
+class Player {
+    public void play() {
+        System.out.println("The player is playing cricket.");
+    }
+}
+
+class Batsman extends Player {
+    @Override
+    public void play() {
+        System.out.println("The batsman is batting.");
+    }
+}
+
+class Bowler extends Player {
+    @Override
+    public void play() {
+        System.out.println("The bowler is bowling.");
+    }
+}
+
+public class CricketGame {
+    public static void main(String[] args) {
+        Batsman batsman = new Batsman();
+        Bowler bowler = new Bowler();
+
+        batsman.play();
+        bowler.play();
+    }
+}
+In this code, we have a Player class with a play() method that prints the message for a generic cricket player. We then have Batsman and Bowler classes that inherit from Player and override the play() method to print specific messages for batsmen and bowlers. Finally, in the main program, we create objects of Batsman and Bowler and call their respective play() methods.
+
+
+
+
+
+Send a message
+
+
+Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT August 3
